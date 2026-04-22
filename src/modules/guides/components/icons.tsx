@@ -134,3 +134,12 @@ export function LogoutIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function DownloadIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path d="M12 2V14M12 14L5 7M12 14L19 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M3 16V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
