@@ -11,6 +11,7 @@ export type GuideItem = {
   tags: string[];
   ctaLabel: string;
   imageTheme: string;
+  image: string;
 };
 
 export type GuideSection = {

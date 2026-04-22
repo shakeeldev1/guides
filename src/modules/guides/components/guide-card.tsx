@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PlayIcon } from "@/modules/guides/components/icons";
 import type { GuideItem } from "@/modules/guides/types";
 
@@ -12,7 +13,15 @@ function formatViews(value: number) {
 export function GuideCard({ item }: GuideCardProps) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-[#ececf0] bg-white shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.08)]">
-      <div className={`relative h-32 bg-gradient-to-br ${item.imageTheme}`}>
+      <div className={`relative h-32 overflow-hidden bg-gradient-to-br ${item.imageTheme}`}>
+        {item.image ? (
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover"
+          />
+        ) : null}
         {item.kind === "video" ? (
           <div className="absolute inset-0 grid place-items-center">
             <PlayIcon className="h-11 w-11" />

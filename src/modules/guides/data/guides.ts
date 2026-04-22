@@ -16,6 +16,7 @@ export const guideSections: GuideSection[] = [
         tags: ["beginner", "onboarding", "tutorial"],
         ctaLabel: "Watch Video",
         imageTheme: "from-[#fee6b8] via-[#f7cc77] to-[#f5b85a]",
+        image: "",
       },
       {
         id: "video-2",
@@ -28,6 +29,7 @@ export const guideSections: GuideSection[] = [
         tags: ["ad accounts", "setup", "tutorial"],
         ctaLabel: "Watch Video",
         imageTheme: "from-[#90a8ff] via-[#637cf7] to-[#4a63d9]",
+        image: "",
       },
       {
         id: "video-3",
@@ -40,6 +42,7 @@ export const guideSections: GuideSection[] = [
         tags: ["compliance", "guidelines", "tutorial"],
         ctaLabel: "Watch Video",
         imageTheme: "from-[#736cc5] via-[#4f4e9f] to-[#34346d]",
+        image: "",
       },
     ],
   },
@@ -58,6 +61,7 @@ export const guideSections: GuideSection[] = [
         tags: ["cashback", "rewards", "earnings"],
         ctaLabel: "View Guide",
         imageTheme: "from-[#eecfa7] via-[#d8b071] to-[#c6975b]",
+        image: "/images/cashbackprogram.png",
       },
       {
         id: "pdf-2",
@@ -70,6 +74,7 @@ export const guideSections: GuideSection[] = [
         tags: ["api", "integration", "automation"],
         ctaLabel: "View Guide",
         imageTheme: "from-[#ffcb8a] via-[#faa44b] to-[#f58f28]",
+        image: "/images/apiIntegrationguide.png",
       },
       {
         id: "pdf-3",
@@ -82,6 +87,7 @@ export const guideSections: GuideSection[] = [
         tags: ["admin", "internal", "training"],
         ctaLabel: "View Guide",
         imageTheme: "from-[#fff5a6] via-[#fde85f] to-[#f4c63f]",
+        image: "/images/adminpaneloverview.png",
       },
     ],
   },
