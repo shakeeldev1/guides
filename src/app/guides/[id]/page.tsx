@@ -3,9 +3,9 @@ import { GuideDetailPage } from "@/modules/guides/guide-detail-page";
 import { guideDetails } from "@/modules/guides/data/guide-details";
 
 type DetailPageProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
 export async function generateStaticParams() {
@@ -14,8 +14,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Page({ params }: DetailPageProps) {
-  const guide = guideDetails[params.id];
+export default async function Page({ params }: DetailPageProps) {
+  const { id } = await params;
+  const guide = guideDetails[id];
 
   if (!guide) {
     notFound();
